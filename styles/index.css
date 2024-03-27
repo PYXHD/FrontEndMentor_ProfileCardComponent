@@ -21,7 +21,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: rgb(25, 162, 174);
+  background-color: rgb(25, 162, 174);
+  background-image: url(../img/bg-pattern-top.svg), url(../img/bg-pattern-bottom.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 52vw bottom 36vh, left 48vw top 52vh;
 }
 
 main {
