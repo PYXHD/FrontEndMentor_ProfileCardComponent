@@ -1,0 +1,144 @@
+@font-face {
+  font-family: Kumbh;
+  src: url(../fonts/KumbhSans-VariableFont.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgb(25, 162, 174);
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  margin: 25px;
+}
+main .card-container {
+  width: 350px;
+  height: 375px;
+  background: white;
+  display: grid;
+  grid-template-rows: 38% 62%;
+  border-radius: 15px;
+  overflow: hidden;
+}
+@media screen and (max-width: 425px) {
+  main .card-container {
+    width: 100%;
+    max-width: 350px;
+  }
+}
+main .card-container .top-part {
+  position: relative;
+  background: center/cover url(../img/bg-pattern-card.svg);
+}
+main .card-container .top-part img {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 50px;
+  outline: 5px solid rgb(255, 255, 255);
+}
+main .card-container .bottom-part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 70px;
+}
+main .card-container .bottom-part .identity {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+  font-family: Kumbh;
+}
+main .card-container .bottom-part .identity .name {
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: rgb(45, 50, 72);
+}
+main .card-container .bottom-part .identity .name .age {
+  font-weight: 400;
+  margin-left: 5px;
+  color: rgb(150, 150, 150);
+}
+main .card-container .bottom-part .identity .town {
+  font-size: 0.9rem;
+  color: rgb(150, 150, 150);
+}
+main .card-container .bottom-part .stats-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-top: 1px solid rgb(106, 111, 129);
+  padding: 25px 52px 20px;
+}
+@media screen and (max-width: 425px) {
+  main .card-container .bottom-part .stats-container {
+    padding: 25px 15% 20px;
+  }
+}
+main .card-container .bottom-part .stats-container .stats {
+  text-align: center;
+  font-family: Kumbh;
+  line-height: 20px;
+}
+main .card-container .bottom-part .stats-container .stats span:first-of-type {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: rgb(45, 50, 72);
+}
+main .card-container .bottom-part .stats-container .stats span:nth-of-type(2) {
+  font-size: 0.7rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: rgb(150, 150, 150);
+}/*# sourceMappingURL=index.css.map */

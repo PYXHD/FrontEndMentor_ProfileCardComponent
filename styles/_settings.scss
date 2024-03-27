@@ -1,0 +1,25 @@
+@font-face {
+  font-family: Kumbh;
+  src: url(../fonts/KumbhSans-VariableFont.ttf);
+}
+
+$font: Kumbh;
+
+$color1: rgb(25, 162, 174);
+$color2: rgb(45, 50, 72);
+$color3: rgb(106, 111, 129);
+$color4: rgb(150, 150, 150);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $color1;
+}
